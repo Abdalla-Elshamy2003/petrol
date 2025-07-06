@@ -615,7 +615,7 @@ def main():
             st.markdown("""
             <div style="background:#f7f2ff;border-radius:1.3rem;padding:1.25rem 1.1rem 1.2rem 1.1rem;">
             <b style='color:#7B1FA2;font-size:1.18rem;'>ANN</b><br>
-            <span style='color:#232;'>• شبكة عصبية اصطناعية (Artificial Neural Network).<br>
+            <span style='color:#232;'>• شبكة عصبية اصطناعية (Artificial Neural Network).<br>ب
             • تتعلم الأنماط المخفية بين كل المتغيرات.<br>
             • ممتازة في حال وجود بيانات كبيرة وأنماط معقدة.<br></span>
             </div>
