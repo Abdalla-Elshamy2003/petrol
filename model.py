@@ -103,7 +103,7 @@ def prepare_and_train_models(df):
     model_xgb.fit(X_train, y_train)
     joblib.dump(model_xgb, os.path.join(MODEL_DIR, "xgboost_model.pkl"))
     y_pred = model_xgb.predict(X_test)
-    rmse = mean_squared_error(y_test, y_pred, squared=False)
+    rmse = mean_squared_error(y_test, y_pred) ** 0.5
     r2 = r2_score(y_test, y_pred)
 
     arima_series = df.groupby(['السنة', 'الشهر'])['الكمية باللتر'].sum().reset_index()
